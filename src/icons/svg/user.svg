@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="24px" viewBox="0 0 22 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="107.106444%" y1="-241.807747%" x2="6.22460462%" y2="83.5198026%" id="linearGradient-1">
+            <stop stop-color="#FFC49E" offset="0%"></stop>
+            <stop stop-color="#FF6181" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面主体" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我的（未登录状态）" transform="translate(-304.000000, -625.000000)" fill="url(#linearGradient-1)">
+            <g id="Group-19" transform="translate(303.000000, 624.000000)">
+                <g id="Group-3" transform="translate(1.000000, 1.000000)">
+                    <ellipse id="Oval-2-Copy-2" cx="10.9416102" cy="6.53645212" rx="6.1875" ry="6.35294118"></ellipse>
+                    <path d="M11,12.7058824 C5.18247391,12.7058824 1.67246667,15.0750996 0.469978281,19.813534 L0.469992614,19.8135376 C0.0135419634,21.6121924 1.10161339,23.4403166 2.90026816,23.8967672 C3.17041273,23.9653227 3.44803755,24 3.72674518,24 L18.2732442,24.0000067 C20.1289247,24.0000067 21.633251,22.4956804 21.633251,20.6399999 C21.633251,20.3612884 21.598573,20.0836598 21.5300161,19.8135117 C20.3275223,15.0750921 16.817517,12.7058824 11,12.7058824 Z" id="Path-7"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
