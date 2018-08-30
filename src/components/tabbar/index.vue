@@ -56,7 +56,19 @@ export default {
   width: 100%
   height: 100px
   background: #fff
+  box-shadow: 0 1px -6px #ccc;
   -webkit-mask-image: radial-gradient(circle,#fff 100%,#000 0)
   z-index: 100
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    background: rgba(0,0,0,.2)
+    width: 100%
+    height: 1px
+    transform: scaleY(0.5)
+    transform-origin: 0 0
+
 </style>
 

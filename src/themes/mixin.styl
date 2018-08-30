@@ -1,5 +1,6 @@
 // 背景图片
 bg-image($url)
+  background-size: 100% 100%
   background-image: url($url + "@2x.png")
   @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3)
     background-image: url($url + "@3x.png")
@@ -10,9 +11,27 @@ no-wrap()
   overflow: hidden
   white-space: nowrap
 // 多行省略
-no-wrap-many($num)
+no-wrap-many($num = 1)
   overflow : hidden
   text-overflow: ellipsis
   display: -webkit-box
   -webkit-line-clamp: $num
   -webkit-box-orient: vertical
+
+// 1 px
+border-1px($color = #F0F0F0)
+  position: relative
+  &:after
+    display: block
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    border-top: 1px solid $color
+    content: ' '
+    @media (-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5)
+      transform: scaleY(0.7)
+    @media (-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2)
+          transform: scaleY(0.5)
+    @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3)
+          transform: scaleY(0.3)

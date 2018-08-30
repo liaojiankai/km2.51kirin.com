@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="index__header">
     <div class="title">{{title}}</div>
     <div class="header-navs">
       <template v-for="tab in tabs">
@@ -35,17 +35,16 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-.header
+<style lang="stylus">
+@import '~@themes/mixin.styl'
+
+.index__header
   height: 344px
   color: #fff
   display: flex
   flex-direction: column
-  background: url('./img/background@2x.png')
+  bg-image('./img/background')
   background-size: 100% 100%
-  @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3)
-    background: url('./img/background@3x.png')
-    background-size: 100% 100%
 
   .title
     padding: 24px 0

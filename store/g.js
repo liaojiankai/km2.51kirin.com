@@ -1,5 +1,6 @@
 export const types = {
   SET_ROUTER_ANIMATE_TYPE: 'SET_ROUTER_ANIMATE_TYPE',
+  INIT_ROUTER_ANIMATE: 'INIT_ROUTER_ANIMATE',
   TOGGLE_PAGE_LOADING: 'TOGGLE_PAGE_LOADING',
 }
 
@@ -33,7 +34,7 @@ const mutations = {
   },
   [types.TOGGLE_PAGE_LOADING](state, loading) {
     state.pageLoading = loading
-  }
+  },
 }
 
 export default {

@@ -3,23 +3,22 @@ import VueRouter from 'vue-router'
 import routes from './routes'
 import store from '../../store'
 
-console.log('routes: xxxx -----:', routes)
 Vue.use(VueRouter)
 
 // 路由配置
-const RouterConfig = {
+const router = new VueRouter({
   linkActiveClass: 'active-on',
   // mode: 'history',
   routes: routes
-}
-
-const router = new VueRouter(RouterConfig)
+})
 
 const history = window.sessionStorage
 
 history.clear()
 
 let historyCount = Number(history.getItem('routers')) || 0
+
+console.log('historyCount: ', historyCount)
 
 history.setItem('routers', JSON.stringify([{path: '/', index: 0}]))
 // ‘in’ 下一页   ‘out’ 返回 ’

@@ -1,7 +1,8 @@
 <template>
-<div class="marquee">
+<div class="index__marquee">
   <div class="left">
-    <img class="icon-img" src="./img/toast@2x.png" alt="">
+    <div class="icon-toast-img"></div>
+    <!-- <img class="icon-img" src="./img/toast@2x.png" alt=""> -->
   </div>
   <div class="marquee_box">
     <ul class="marquee_list" :class="{'marquee_top': animate}">
@@ -23,7 +24,7 @@ export default {
         "用户155****7538获得奖励9200蜜分",
         "用户138****5689获得奖励6800蜜分",
       ],
-       animate: false
+      animate: false
     }
   },
   methods: {
@@ -52,8 +53,10 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-.marquee
+<style lang="stylus">
+@import '~@themes/mixin.styl'
+
+.index__marquee
   padding: 0 32px
   height: 74px
   line-height: 74px
@@ -66,16 +69,17 @@ export default {
     display: flex
     justify-content: center
     align-items: center
-    .icon-img
+    .icon-toast-img
       width: 36px
       height: 32px
+      bg-image('./img/toast')
+      background-size: 100% 100%
 
   .marquee_box
     margin-left: 18px
 
-
-.marquee_top
-  transition: all 0.5s
-  margin-top: -74px
+  .marquee_top
+    transition: all 0.5s
+    margin-top: -74px
 
 </style>
